@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1 span {
+    color: #fc3c3c;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#selection, #progressBar {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+#progressBar {
+    display: none;
+    content: '';
+    bottom: 300px;
+    width: 0px;
+    background-color: #fc3c3c;
+}
+
+#menu, #routes {
+    padding: 10px;
+}
+
+label {
+    padding-right: 15px;
+}
+
+#refresh-info {
+    color: red;
+    padding: 10px;
+}
+
+#map {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.busMarker {
+    background-image: url('./images/red.png');
+    background-size:  cover;
+    width:            25px;
+    height:           25px;
+    cursor:           pointer;
+}

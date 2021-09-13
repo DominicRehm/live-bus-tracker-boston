@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Bus Tracker</title>
+</head>
+<body>
+    <div id="container">
+        <main>
+            <div id="progressBar">
+                
+            </div>
+            <div id="selection">
+                <h1><span>LIVE</span> Bus Tracker</h1>
+                <h3>Select Map Style</h3>
+                <div id="menu">
+                    <input id="streets-v11" type="radio" name="rtoggle" value="streets" checked="checked">
+                    <label for="streets-v11" >Streets</label>
+                    <input id="satellite-v9" type="radio" name="rtoggle" value="satellite">
+                    <label for="satellite-v9">Satellite</label>
+                    <input id="light-v10" type="radio" name="rtoggle" value="light">
+                    <label for="light-v10">Light</label>
+                    <input id="dark-v10" type="radio" name="rtoggle" value="dark">
+                    <label for="dark-v10">Dark</label>
+                </div>
+                <h3>Select Route</h3>
+                <div id="routes">
+                    <input id="1" type="radio" name="rtoggle" value="1" checked="checked">
+                    <label for="1" >Route 1</label>
+                    <input id="59" type="radio" name="rtoggle" value="59">
+                    <label for="59">Route 59</label>
+                    <input id="71" type="radio" name="rtoggle" value="71">
+                    <label for="71">Route 71</label>
+                    <input id="8" type="radio" name="rtoggle" value="8">
+                    <label for="8">Route 8</label>
+                    <input id="9" type="radio" name="rtoggle" value="9">
+                    <label for="9">Route 9</label>
+                </div>
+                <span id="refresh-info">The selected route is active after the next automatic refresh!</span>
+            </div>
+            <div id="map"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
